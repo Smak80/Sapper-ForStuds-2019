@@ -15,7 +15,7 @@ namespace Sapper
 
         private void Init()
         {
-            if (_fController is not null)
+            if (_fController != null)
                 _fController.Dispose();
             _f = new Field(10, 15);
             _fController = new FieldController(panel1, _f);
